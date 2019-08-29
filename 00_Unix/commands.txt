@@ -33,3 +33,5 @@ tail -n +2 wiki.words > wiki.nextwords
 
 paste wiki.words wiki.nextwords | sort | uniq -c > wiki.bigrams
 sort -nr < wiki.bigrams | sed 10q
+
+5. Grep
