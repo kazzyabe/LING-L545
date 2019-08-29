@@ -1,0 +1,32 @@
+gsed 's/[^a-zA-Z]\+/\n/g' < wiki.txt|sort -r |uniq -c > wiki.hist
+
+gsed 's/[^a-zA-Z]\+/\n/g' < wiki.txt| sed 5q
+
+gsed 's/[^a-zA-Z]\+/\n/g' < wiki.txt|sort -r | sed 10q
+
+gsed 's/[^a-zA-Z]\+/\n/g' < wiki.txt | sort -r | uniq -c | sed 5q
+
+uconv -x upper < wiki.txt | gsed 's/[^a-zA-Z]\+/\n/g' | sort -r | uniq -c | sed 5q
+
+Vowel counts - reverse order
+uconv -x upper < wiki.txt | gsed 's/[^AEIOU]\+/\n/g' | sort -r | uniq -c
+
+                Frequency order
+uconv -x upper < wiki.txt | gsed 's/[^AEIOU]\+/\n/g' | sort | uniq -c | sort -n
+
+Sort option---------------------------
+sort -d	dictionary order
+sort -f	fold case
+sort -n	numeric order
+sort -r	reverse order
+sort -nr	reverse numeric order
+sort -u	remove duplicates
+sort +1	start with field 1 (starting from 0)
+sort +0.50	start with 50th character
+sort +1.5	start with 5th character of field 1
+---------------------------------
+
+
+4. Bigrams
+gsed 's/[^a-zA-Z]\+/\n/g' < wiki.txt > wiki.words
+tail -n +2 wiki.words > wiki.nextwords
