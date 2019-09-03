@@ -35,3 +35,23 @@ paste wiki.words wiki.nextwords | sort | uniq -c > wiki.bigrams
 sort -nr < wiki.bigrams | sed 10q
 
 5. Grep
+Excercise
+    Start with upper cases:
+        grep -c '^[A-Z]' < wiki.words
+    Start with lower cases:
+        grep -c '^[a-z]' < wiki.words
+    4 letter words:
+        grep -c '^[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z]$' < wiki.words
+    No vowel:
+        grep '^[^aeiou]+$' < wiki.words
+
+exercise:
+INITIAL CONSONANT SEQUENCE
+grep '^[^aeiouAEIOU]' < wiki.words > conswords.txt
+gsed 's/[aeiouAEIOU].*//g' < conswords.txt > consequence.txt
+uniq -c < consequence.txt > seqcount.txt
+
+FINAL CONSONANT SEQUENCE
+grep '[^aeiouAEIOU]$' < wiki.words | rev > fconswords.txt
+gsed 's/[aeiouAEIOU].*//g' < fconswords.txt > fconsequence.txt
+uniq -c < consequence.txt > fseqcount.txt
