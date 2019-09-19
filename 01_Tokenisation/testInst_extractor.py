@@ -1,5 +1,6 @@
 import sys
 
+# f = open("UD_Japanese-GSD-master/ja_gsd-ud-train.conllu")
 f = open("UD_Japanese-GSD-master/ja_gsd-ud-test.conllu")
 
 line = f.readline()
