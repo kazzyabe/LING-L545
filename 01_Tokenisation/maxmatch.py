@@ -1,6 +1,6 @@
 def maxmatch(string, dictionary):
-    if len(string) == 1:
-        return [string]
+    if len(string) == 0:
+        return []
     else:
         for i in range(len(string)-1, -1, -1):
             w = string[:i+1]
@@ -33,6 +33,6 @@ if __name__ == "__main__":
     s = f.readline().strip()
     c = 1
     while s:
-        sys.stdout.write("///".join(maxmatch(s,dictionary)) + "\n")
+        sys.stdout.write(" ".join(maxmatch(s,dictionary)) + "\n")
         s = f.readline().strip()
         c = c + 1 
