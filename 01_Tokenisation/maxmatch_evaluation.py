@@ -7,10 +7,15 @@ maxmatch = open("mm_result.txt")
 g = g_truth.readline()
 m = maxmatch.readline()
 
+# taking mean
+c = 1
+numorator = 0
 while m and g:
-    sys.stdout.write(wer(g,m) + "\n")
+    numorator += float(wer(g,m))
     g = g_truth.readline()
     m = maxmatch.readline()
+    c += 1
 
 g_truth.close()
 maxmatch.close()
+print(numorator/c)

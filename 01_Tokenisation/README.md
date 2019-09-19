@@ -13,7 +13,7 @@
   * it's run maxmatch on test.conllu
   * result is extracted to mm_result.txt
 4. maxmatch_evaluation.py: use wer to evaluate mm_result.txt
-  * output: maxmatch_evaluation.txt
+  * output: print the mean wer score in percentage = 8.404337568058088%
   
 # Data
   * test.txt : extracted test sentences from test.conllu using test_extractor.py
@@ -21,4 +21,4 @@
   * UD_Japanese-GSD-master
 
 # WER
-  * WER-in-python
+  * wer.py: implementation of wer calculatino
