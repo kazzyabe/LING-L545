@@ -35,11 +35,5 @@ Rules
 %{Ă%}:0 <=> %{м%}: %>: _ н ; 
 [:FrontVow | :BackVow] %>: _ н ;
 
-! "Vowel is deleted if there is a surface vowel before the morpheme boundary"
-! %{Ӑ%}:0 <=> [BackVow: | FrontVow:] %>: _ ;
-
-! "Vowel deletion if there is previous %{м%}:0"
-! %{Ӑ%}:0 <=> 
-
 "{M} deletion if followed by {Ӑ}н"
 %{м%}:0 <=> _  %>: %{Ă%}: н ;
