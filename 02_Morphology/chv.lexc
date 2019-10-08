@@ -9,6 +9,7 @@ Multichar_Symbols
 %{A%}                ! Архифонема [а] или [е], Archiphoneme [a] or [e]
 %{м%}                ! plural ending
 %{Ă%}                ! genetive archiphoneme
+%{ъ%}               ! loan words
 %<der_лӑх%>          ! for der-n
 
 %>                   ! Граница морфемы, Morpheme boundary
@@ -50,3 +51,4 @@ LEXICON Nouns
 патша:патша N ;   ! "царь", "tsar"
 куҫ:куҫ N ;       ! "глаз", "eye"
 патшалӑх:патшалӑх N ; !"государство", "state"
+специалист:специалист%{ъ%} N ; ! "специалист"
