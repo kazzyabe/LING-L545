@@ -16,7 +16,12 @@ Multichar_Symbols
 
 LEXICON Root
 
-Nouns ;
+Guesser ;
+!Nouns ;
+
+LEXICON Guesser
+
+🂡%<guess%>:🂡 N ;
 
 LEXICON CASES 
 %<gen%>:%>%{Ă%}н # ;
@@ -52,3 +57,37 @@ LEXICON Nouns
 куҫ:куҫ N ;       ! "глаз", "eye"
 патшалӑх:патшалӑх N ; !"государство", "state"
 специалист:специалист%{ъ%} N ; ! "специалист"
+
+LEXICON NUM-DIGIT
+
+%<num%>:%- CASES ;
+
+LEXICON LAST-DIGIT
+
+1:1%{э%}%{л%}    NUM-DIGIT ; ! "пӗр" 
+2:2%{с%}%{э%}    NUM-DIGIT ; ! "иккӗ" 
+3:3%{с%}%{э%}    NUM-DIGIT ; ! "виҫҫӗ" 
+4:4%{с%}%{а%}    NUM-DIGIT ; ! "тӑваттӑ" 
+5:5%{э%}%{с%}    NUM-DIGIT ; ! "пиллӗк" 
+6:6%{с%}%{а%}    NUM-DIGIT ; ! "улттӑ" 
+7:7%{с%}%{э%}    NUM-DIGIT ; ! "ҫиччӗ" 
+8:8%{э%}%{л%}    NUM-DIGIT ; ! "саккӑр" 
+9:9%{э%}%{л%}    NUM-DIGIT ; ! "тӑххӑр" 
+
+LEXICON LOOP
+
+                 LAST-DIGIT ; 
+                 DIGITLEX ; 
+
+LEXICON DIGITLEX
+
+%0:%0 LOOP ;
+1:1   LOOP ;
+2:2   LOOP ;
+3:3   LOOP ;
+4:4   LOOP ;
+5:5   LOOP ;
+6:6   LOOP ;
+7:7   LOOP ;
+8:8   LOOP ;
+9:9   LOOP ;
