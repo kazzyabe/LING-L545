@@ -1,0 +1,1 @@
+cat ../00_Unix/wiki.txt  | sed 's/[^a-zA-Z]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr
