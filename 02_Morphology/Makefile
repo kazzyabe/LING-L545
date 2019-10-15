@@ -23,3 +23,5 @@ Chuvash:
 	echo "лайк<guess><n><pl><ins>" | hfst-lookup -qp chv.gen_guesser.hfst 
 	hfst-regexp2fst chv.restrict.regex -o chv.restrict.hfst
 	hfst-invert chv.gen_guesser.hfst | hfst-compose -1 - -2 chv.restrict.hfst -o chv.mor_guesser.hfst
+	cat chv.crp.txt  | gsed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr  > chv.freq.txt
+	cat chv.freq.txt | python3 freq2prob.py | hfst-strings2fst -j -o chv.surweights.hfst

@@ -1,1 +1,1 @@
-cat ../00_Unix/wiki.txt  | sed 's/[^a-zA-Z]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr
+cat chv.crp.txt  | sed 's/[^^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr   > chv.freq.txt
