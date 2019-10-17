@@ -3,3 +3,4 @@
 02_Morphology/WikiExtractor
 02_Morphology/cvwiki-20191001-pages-articles.xml
 02_Morphology/cvwiki-20191001-pages-articles.xml.bz2
+02_Morphology/*.hfst
