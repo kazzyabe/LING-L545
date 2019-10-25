@@ -4,3 +4,5 @@
 02_Morphology/cvwiki-20191001-pages-articles.xml
 02_Morphology/cvwiki-20191001-pages-articles.xml.bz2
 02_Morphology/*.hfst
+04_Parsing/udpipe
+04_Parsing/UD_Finnish-TDT
