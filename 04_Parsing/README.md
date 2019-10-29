@@ -23,24 +23,24 @@ minulle - pronoun:
     Both label is conj
 
 sisarentyttärelleni - Noun
-Gold: dependent of pupulle Noun 
-Test: dependent of Varasin Verb
-Both label is conj
+    Gold: dependent of pupulle Noun 
+    Test: dependent of Varasin Verb
+    Both label is conj
 
 pääsi - Verb
-Gold: dependent of sisarentyttärelleni Noun
-Test: dependent of Varasin Verb
-Both label is acl:relcl
+    Gold: dependent of sisarentyttärelleni Noun
+    Test: dependent of Varasin Verb
+    Both label is acl:relcl
 
 kaupunginteatterin - Noun
-Gold: dependent of -musikaaliin Noun with nmod:poss
-Test: dependent of Laulavat verb with nsubj
+    Gold: dependent of -musikaaliin Noun with nmod:poss
+    Test: dependent of Laulavat verb with nsubj
 
 sadepisarat - Noun
-Gold: dependent of -musikaaliin Noun with compound:nn
-Test: dependent of lukemaan Verb with obj
+    Gold: dependent of -musikaaliin Noun with compound:nn
+    Test: dependent of lukemaan Verb with obj
 
 -musikaaliin - Noun
-Gold: dependent of liput Noun with nmod
-Test: dependent of lukemaan Verb with obl
+    Gold: dependent of liput Noun with nmod
+    Test: dependent of lukemaan Verb with obl
 ```
