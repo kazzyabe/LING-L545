@@ -15,10 +15,12 @@ LAS        |     81.44 |     81.44 |     81.44 |     81.44
 ```
 
 ## Errors
+### The parser tends to attach nouns to a previous verb
+```
 minulle - pronoun: 
-Gold: dependent of pupulle Noun 
-Test: dependent of Varasin Verb
-Both label is conj
+    Gold: dependent of pupulle Noun 
+    Test: dependent of Varasin Verb
+    Both label is conj
 
 sisarentyttärelleni - Noun
 Gold: dependent of pupulle Noun 
@@ -41,3 +43,4 @@ Test: dependent of lukemaan Verb with obj
 -musikaaliin - Noun
 Gold: dependent of liput Noun with nmod
 Test: dependent of lukemaan Verb with obl
+```
